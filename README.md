@@ -12,18 +12,18 @@ You don't need to crop image into 224*224*3 size anymore, pytorchvision provide 
 Explanation of Each File
 ====
 1. main.py is just used to control parameters, it doesn't contains any useful details.
-2. ResNet.py & VGG.py the cores of the project, it contains the implementation of Network.
-3. train.py contains the details of generate training process.
+2. ResNet.py & VGG.py are the cores of the project, they have the implementation of Networks.
+3. train.py contains the details of training process.
 4. data.py maintains a Class to generate CACD data class, which is very different with Tensorflow and quite useful.
 
 Training Part
 ====
 1. Run main.py directly, there are some options and parameters you can modify, pleace check the details of main.py.
-2. about "--model" option, there are resnet50, resnet101, vgg16. Although I also implemented VGG class, but I didn't check whether it's working or not.
-3. Label and Image Name are loaded from "./data/label.npy" and "./data/name.npy".<br>
+2. About "--model", there are 3 options: resnet50, resnet101, vgg16. Although I also implemented VGG class, but I didn't check whether it's working or not, so the default option is resnet50.
+3. Labels and Image names are loaded from "./data/label.npy" and "./data/name.npy".<br>
    Pytorch provide a very useful approach to create datasets. Please check data.py
 4. Label is range from [1, LABELSNUM], to make correct classification, we should change it to [0, LABELNUM-1]
-5. If you want to load from a existing model, you should run the following "python main.py --model-path your_path --pretrained 1".
+5. If you want to load a existing model, you should run the following "python main.py --model-path your_path --pretrained 1".
 
 Evaluation 
 ====
