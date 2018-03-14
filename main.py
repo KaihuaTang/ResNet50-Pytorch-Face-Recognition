@@ -10,7 +10,7 @@ parser.add_argument("--root-path", type=str, default="CACD2000/",
                     help="root path of images")
 parser.add_argument("--num-classes", type=int, default=2000,
                     help="number of classes")
-parser.add_argument("--model-path", type=str, default="params.pkl",
+parser.add_argument("--model-path", type=str, default="/model/params.pkl",
                     help="path to save and load model")
 parser.add_argument("--num-epoch", type=int, default=10,
                     help="number of epoch")
