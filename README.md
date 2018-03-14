@@ -15,6 +15,7 @@ Explanation of Each File
 2. ResNet.py & VGG.py are the cores of the project, they have the implementation of Networks.
 3. train.py contains the details of training process.
 4. data.py maintains a Class to generate CACD data class, which is very different with Tensorflow and quite useful.
+5. In /model/params.pkl, we give a pretrained model learnt through default setting (change number of epoch to 30)
 
 Training Part
 ====
