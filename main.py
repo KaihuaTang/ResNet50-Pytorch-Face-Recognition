@@ -31,6 +31,8 @@ args = parser.parse_args()
 
 
 if __name__ == '__main__':
+    global args
+  
     trainCACD = Train(root_path = args.root_path, model_name = args.model, number_classes = args.num_classes, path=args.model_path, loadPretrain=args.pretrained)
     
     trainCACD.start_train(epoch=args.num_epoch, batch_size=args.batch_size,
