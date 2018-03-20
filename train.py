@@ -16,7 +16,7 @@ from torchvision import datasets, models, transforms
 class Train:
     def __init__(self, root_path = "CACD2000/", model_name = "resnet50", number_classes = 2000, path="model.pkl", loadPretrain=0):
         """
-        Init Dataset and Model
+        Init Dataset, Model and others
         """
         self.save_path = path
         self.cacd_dataset = ImageData(root_path=root_path, label_path="data/label.npy", name_path="data/name.npy", train_mode = "train")
