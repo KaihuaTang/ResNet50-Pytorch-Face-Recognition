@@ -2,6 +2,9 @@
 Using Pytorch to implement a ResNet50 for Cross-Age Face Recognition<br>
 Generally speaking, Pytorch is much more user-friendly than Tensorflow for academic purpose.
 
+**If my open source projects have inspired you, giving me some sponsorship will be a great help to my subsequent open source work.** 
+[Support my subsequent open source work❤️🙏](https://kaihuatang.github.io/donate.html)
+
 Prepare Dataset and Environment
 ====
 Trainable ResNet50 using Python3.5 + Pytorch <br>
